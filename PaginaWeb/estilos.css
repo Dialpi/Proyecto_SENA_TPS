@@ -102,6 +102,18 @@ header nav a:hover {
   justify-content: center;
   align-items: center;
 }
+#pocillos{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#camisas{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
 .titulo {
     font-family: 'Poppins', sans-serif;
     color: rgb(19, 4, 83);
