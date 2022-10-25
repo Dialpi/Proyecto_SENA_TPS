@@ -8,7 +8,7 @@ body{
   
   .inicio {
     width: 320px;
-    height: 450px;
+    height: 350px;
     background: #000;
     color: #fff;
     top: 50%;
@@ -47,7 +47,7 @@ body{
     margin-bottom: 20px;
   }
   
-  .inicio input[type="text"], .inicio input[type="password"] {
+  .inicio input[type="text"], .inicio input[type="text"] {
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
@@ -73,13 +73,3 @@ body{
     color: #000;
   }
   
-  .inicio a {
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 20px;
-    color: darkgrey;
-  }
-  
-  .inicio a:hover {
-    color: #fff;
-  }

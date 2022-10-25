@@ -58,7 +58,7 @@ body{
     font-size: 16px;
   }
   
-  .inicio input[type="submit"] {
+  .inicio input[type="button"] {
     border: none;
     outline: none;
     height: 40px;
@@ -68,7 +68,7 @@ body{
     border-radius: 20px;
   }
   
-  .inicio input[type="submit"]:hover {
+  .inicio input[type="button"]:hover {
     cursor: pointer;
     background: #ffc107;
     color: #000;
