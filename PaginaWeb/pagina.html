@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <title>Liber-Arte</title>
         <link rel="stylesheet" href="./estilos.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
         <script src="pagina.js"></script>
         <script src="https://code.jquery.com/jquery-latest.js"></script>
         <script src="header.js"></script>
@@ -11,7 +12,7 @@
     </head>
      <body> 
 
-         <header>
+        <header>
             <div class="topheader">
                 <span id="telefono">3118216336</span>
                  <button onclick = "location.href='./inicia_sesion.html'" >Inicia sesion</button>
@@ -27,8 +28,9 @@
                     <a href="#">Contacto</a>
                 </nav>
             </div>
-         </header>
-         <section class="contenido wrapper">
+        </header>
+        <div class="contenedor">
+            <main class="contenido-principal">
                 <h1 class="titulo">TUS ESTAMPADOS</h1> 
                 <p><h3 class="subsubtitulo"> En esta pagina encontraras estampados de todo tipo tambien muchas calses de producto tales como estampados de camisetas, estampados de pocillos, y nuestro producto principal placas conmemorativas de las fuerzas armadas de colombia</h3> </p>
                 <section id="placa">
@@ -82,8 +84,68 @@
                          </div>
                         </p>
                     </section> 
-                    
-        </section>
+                </main>
+        </div>
+        <div class="carousel wrapper">
+            <div class="carousel__contenedor">
+                <button aria-label="anterior" class="carousel__anterior">
+                    <i class="fas fa-chevron-letf"></i>
+                </button>
+
+                <div class="carousel__lista">
+                    <div class="carousel__elemento">
+                        <img src="imagenes/saco1.jpeg" alt="saco1">
+                        <p>Saco 1</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="imagenes/saco2.jpeg" alt="saco2">
+                        <p>Saco 2</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="imagenes/saco3.jpeg" alt="saco3">
+                        <p>Saco 3</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="imagenes/saco4.jpeg" alt="saco4">
+                        <p>Saco 4</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="imagenes/saco5.jpeg" alt="saco5">
+                        <p>Saco 5</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="imagenes/saco6.jpeg" alt="saco6">
+                        <p>Saco 6</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="imagenes/saco7.jpeg" alt="saco7">
+                        <p>Saco 7</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="imagenes/saco8.jpeg" alt="saco8">
+                        <p>Saco 8</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="imagenes/saco9.jpeg" alt="saco9">
+                        <p>Saco 9</p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="imagenes/saco10.jpeg" alt="saco10">
+                        <p>Saco 10</p>
+                    </div>
+                </div>
+
+                <button aria-label="siguiente" class="carousel__siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div role="tablist" class="carousel__indicadores"></div>
+        </div>
+
+       
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
      </body>
+
 
 </html>
