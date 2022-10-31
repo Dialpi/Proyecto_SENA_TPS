@@ -1,33 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
 * {
 	box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
-
 body {
   margin: 0;
   padding: 0 0;
   background: #fffffa;
   font-family: 'Poppins', sans-serif;
   display: block;
-  
 }
-
+/*---------------------------------------------------------------contenido-----------------------------------------------*/
+.boton1 :hover {
   
+  background: #009b02;
+  background-image: -webkit-linear-gradient(top, #009b02, #ffffff);
+  background-image: -moz-linear-gradient(top, #009b02, #ffffff);
+  background-image: -ms-linear-gradient(top, #009b02, #ffffff);
+  background-image: -o-linear-gradient(top, #009b02, #ffffff);
+  background-image: linear-gradient(to bottom, #009b02, #ffffff);
+  text-decoration: none;
+}
+.contenido p {
+  margin-bottom: 1em;
+}
+#placa{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#pocillos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#camisas{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titulo {
+  font-family: 'Poppins', sans-serif;
+  color: #009b02;
+  font-size: 50px;
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+}
+  
+.subtitulo {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(10, 77, 2);
+  font-size: 30px;
+  text-align: center;
+}
+.subsubtitulo {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: center;
+}
+/*------------------------------------------------------header--------------------------------------------------------------------*/
 header {
   width:100%; /* Establecemos que el header abarque el 100% del documento */
   overflow:hidden; /* Eliminamos errores de float */
   background:#F4F9F3;
   margin-bottom:20px;
 }
-
 .wrapper {
   width:90%; /* Establecemos que el ancho sera del 90% */
   max-width:90%; /* Aqui le decimos que el ancho máximo sera de 90% */
   margin:auto; /* Centramos los elementos */
   overflow:hidden; /* Eliminamos errores de float */
 }
-
 header .logo {
   float:left;
 }
@@ -36,17 +82,16 @@ header nav {
   line-height: 100px;
 }
 header nav a{
-    display: inline-block;
-    color: #000;
-    text-decoration: none;
-    padding: 8px 15px;
-    line-height:normal;
-    font-size: 20px;
-    font-weight: bold;
-    -webkit-transition:all 500ms ease ;
-    -o-transition:all 500ms ease ;
-    transition:all 500ms ease ;
-    
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  padding: 8px 15px;
+  line-height:normal;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transition:all 500ms ease ;
+  -o-transition:all 500ms ease ;
+  transition:all 500ms ease ;
 } 
 header nav a:hover {
   background: #009b02;
@@ -67,17 +112,17 @@ header nav a:hover {
 @media screen and (max-width: 900px) {
   header .logo,
   header nav {
-    width:100%;
-    text-align:center;
-    line-height: 45px; 
+  width:100%;
+  text-align:center;
+  line-height: 45px; 
   }
   .header2{
     height: auto;
   }
- .header2 .logo,
- .header2 nav  {
+  .header2 .logo,
+  .header2 nav  {
    line-height: 45px;
- }
+  }
 }
 .topheader {
   font-size: 15px;
@@ -87,86 +132,10 @@ header nav a:hover {
   line-height: 25px; 
   background:#009b02;
 }
-.boton1 :hover {
-  
-    background: #2079b0;
-    background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
-    background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
-    background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
-    background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
-    background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
-    text-decoration: none;
-  }
-.contenido p {
-  margin-bottom: 1em;
-}
-#placa{
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#pocillos{
-  display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-#camisas{
-  display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-.titulo {
-    font-family: 'Poppins', sans-serif;
-    color: #009b02;
-    font-size: 50px;
-    font-family: 'Fredoka One', cursive;
-    text-align: center;
-  }
-  
-  .subtitulo {
-    font-family: 'Poppins', sans-serif;
-    color: rgb(86, 3, 97);
-    font-size: 20px;
-    text-align: center;
-  }
-  .subsubtitulo {
-    font-family: 'Poppins', sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    text-align: center;
-  }
-  /*-------------------- carousel-----------------------------*/
+  /*--------------------------------------------------carousel-----------------------------------------------*/
 .carousel__contenedor{
   position: relative;
 }
-.carousel__siguiente1,
-.carousel__anterior1{
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 50px;
-  top: calc(50% - 45px);
-  cursor:pointer;
-  line-height: 30px;
-  text-align: center;
-  z-index:1000000000;
-  color: #ff0000;
-  opacity: 50%;
-}
-.carousel__anterior1:hover,
-.carousel__siguiente1:hover{
-  opacity: 100%;
-}
-.carousel__anterior1{
-  left:0px;
-}
-.carousel__siguiente1{
-  right:0px;
-}
-
 .carousel__siguiente,
 .carousel__anterior {
   position: absolute;
@@ -178,7 +147,7 @@ align-items: center;
   line-height: 30px;
   text-align: center;
   z-index:10000;
-  color: #ff0000;
+  color: #009b02;
   opacity: 50%;
 }
 .carousel__anterior:hover,
@@ -191,11 +160,9 @@ align-items: center;
 .carousel__siguiente{
   right:0px;
 }
-
 .carousel__lista {
 	overflow: hidden;
 }
-
 .carousel__elemento {
 	text-align: center;
 }
@@ -203,7 +170,6 @@ align-items: center;
   max-width: 450px;
   max-height: 450px;
 }
-
 .carousel__indicadores .glider-dot {
 	display: block;
 	width: 30px;
@@ -212,13 +178,45 @@ align-items: center;
 	opacity: .2;
 	border-radius: 0;
 }
-
 .carousel__indicadores .glider-dot:hover {
 	opacity: .5;
 }
-
 .carousel__indicadores .glider-dot.active {
 	opacity: 1;
+}
+@media screen and (max-width: 800px) {
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	}
+}
+/*------------------------------------ carousel1-----------------------------------------*/
+.carousel__siguiente1,
+.carousel__anterior1{
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  top: calc(50% - 45px);
+  cursor:pointer;
+  line-height: 30px;
+  text-align: center;
+  z-index:1000000000;
+  color: #009b02;
+  opacity: 50%;
+}
+.carousel__anterior1:hover,
+.carousel__siguiente1:hover{
+  opacity: 100%;
+}
+.carousel__anterior1{
+  left:0px;
+}
+.carousel__siguiente1{
+  right:0px;
 }
 .carousel__indicadores1 .glider-dot {
 	display: block;
@@ -228,21 +226,48 @@ align-items: center;
 	opacity: .2;
 	border-radius: 0;
 }
-
 .carousel__indicadores1 .glider-dot:hover {
 	opacity: .5;
 }
-
 .carousel__indicadores1 .glider-dot.active {
 	opacity: 1;
 }
-
-@media screen and (max-width: 800px) {
-	.contenido-principal {
-		flex-direction: column;
-	}
-
-	.contenido-principal > * {
-		width: 100%;
-	}
+/*----------------------------------------------carousel2-------------------------------------------*/
+.carousel__siguiente2,
+.carousel__anterior2{
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  top: calc(50% - 45px);
+  cursor:pointer;
+  line-height: 30px;
+  text-align: center;
+  z-index:1000000000;
+  color: #009b02;
+  opacity: 50%;
+}
+.carousel__anterior2:hover,
+.carousel__siguiente2:hover{
+  opacity: 100%;
+}
+.carousel__anterior2{
+  left:0px;
+}
+.carousel__siguiente2{
+  right:0px;
+}
+.carousel__indicadores2 .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #009b02;
+	opacity: .2;
+	border-radius: 0;
+}
+.carousel__indicadores2 .glider-dot:hover {
+	opacity: .5;
+}
+.carousel__indicadores2 .glider-dot.active {
+	opacity: 1;
 }
