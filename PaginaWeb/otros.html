@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="Ie-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Liber-Arte</title>
+        <link rel="stylesheet" href="./otros.css">
+        <script src="pagina.js"></script>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <script src="header.js"></script>
+
+    </head>
+     <body> 
+
+         <header>
+            <div class="topheader">
+                <span id="telefono">  3118216336  </span>
+                 <button onclick = "location.href='./inicia_sesion.html'" >Inicia sesion</button>
+                  <button onclick = "location.href='./registro.html'" >Registrate</button>
+               
+             </div>
+             <div class="wrapper">
+                <div class="logo"><img src="./Imagenes/logo.jpeg"></div>
+                <nav>
+                    <a href="./pagina.html">Inicio</a>
+                    <a href="./placas.html">Placas</a>
+                    <a href="#">Pocillos</a>
+                    <a href="./otros.html">Otros</a>
+                    <a href="./contacto.html">Contacto</a>
+                </nav>
+            </div>
+         </header>
+        
+        <section class="contenido">
+            <div class="mostrador" id="mostrador">
+                <div class="fila">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./Imagenes/saco1.jpeg" alt="">
+                        </div>
+                        <p class="descripcion">Saco</p>
+                        <span class="precio">$ 1.300</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./Imagenes/saco2.jpeg" alt="">
+                        </div>
+                        <p class="descripcion" id>Saco</p>
+                        <span class="precio">$ 1.800</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./Imagenes/saco3.jpeg" alt="">
+                        </div>
+                        <p class="descripcion">Placa De Mesa</p>
+                        <span class="precio">$ 3.600</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./Imagenes/saco4.jpeg" alt="">
+                        </div>
+                        <p class="descripcion">Saco</p>
+                        <span class="precio">$ 1.800</span>
+                    </div>
+                </div>
+                <div class="fila">
+                    
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./Imagenes/saco5.jpeg" alt="">
+                        </div>
+                        <p class="descripcion">Saco</p>
+                        <span class="precio">$ 2.000</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./Imagenes/saco6.jpeg" alt="">
+                        </div>
+                        <p class="descripcion">Saco</p>
+                        <span class="precio">$ 2.500</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./Imagenes/saco7.jpeg" alt="">
+                        </div>
+                        <p class="descripcion">Saco</p>
+                        <span class="precio">$ 1.800</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./Imagenes/saco8.jpeg" alt="">
+                        </div>
+                        <p class="descripcion">Saco</p>
+                        <span class="precio">$ 1.800</span>
+                    </div>
+                </div>
+                <div class="fila">
+                    
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./Imagenes/saco9.jpeg" alt="">
+                        </div>
+                        <p class="descripcion">Saco</p>
+                        <span class="precio">$ 2.000</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./Imagenes/saco10.jpeg" alt="">
+                        </div>
+                        <p class="descripcion">Saco</p>
+                        <span class="precio">$ 2.500</span>
+                    </div>
+                   
+                    
+                </div>
+                
+            </div>
+            <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+            <div class="seleccion" id="seleccion">
+                <div class="cerrar" onclick="cerrar()">
+                    &#x2715
+                </div>
+                <div class="info">
+                    <img src="img/1.png" alt="" id="img">
+                    <h2 id="modelo">NIKE MODEL 1</h2>
+                    <p id="descripcion">Descripción Modelo 1</p>
+    
+                    <span class="precio" id="precio">$ 130</span>
+    
+                    <div class="fila">
+                        
+                        <button>AGREGAR AL CARRITO</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="otros.js"></script>
+        
+     </body>
+
+</html>

@@ -1,8 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(../imagen/avion-en-las-nubes-artwork_3840x2880_xtrafondos.com.jpg);
-    background-size: cover;
+    background: linear-gradient(120deg, #00D7FF, #f10000 ); 
     font-family: sans-serif;
     height: 100vh;
   }

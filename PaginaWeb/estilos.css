@@ -29,8 +29,6 @@ header {
 }
 
 header .logo {
-  
-  
   float:left;
 }
 header nav {
@@ -55,7 +53,7 @@ header nav a:hover {
   border-radius: 40px;
 }
 .header2 {
-  position:fixed;
+  position: fixed;
   height: 150px;  /* lo grande del segundo header */
   z-index:10000;
 }
@@ -122,8 +120,8 @@ align-items: center;
 }
 .titulo {
     font-family: 'Poppins', sans-serif;
-    color: rgb(19, 4, 83);
-    font-size: 32px;
+    color: #009b02;
+    font-size: 50px;
     font-family: 'Fredoka One', cursive;
     text-align: center;
   }
@@ -154,7 +152,7 @@ align-items: center;
   cursor:pointer;
   line-height: 30px;
   text-align: center;
-  
+  z-index:1000000000;
   color: #ff0000;
   opacity: 50%;
 }
@@ -163,10 +161,10 @@ align-items: center;
   opacity: 100%;
 }
 .carousel__anterior1{
-  left:-5px;
+  left:0px;
 }
 .carousel__siguiente1{
-  right:-5px;
+  right:0px;
 }
 
 .carousel__siguiente,
@@ -179,7 +177,7 @@ align-items: center;
   cursor:pointer;
   line-height: 30px;
   text-align: center;
-  
+  z-index:10000;
   color: #ff0000;
   opacity: 50%;
 }
@@ -188,10 +186,10 @@ align-items: center;
   opacity: 100%;
 }
 .carousel__anterior{
-  left:-5px;
+  left:0px;
 }
 .carousel__siguiente{
-  right:-5px;
+  right:0px;
 }
 
 .carousel__lista {
