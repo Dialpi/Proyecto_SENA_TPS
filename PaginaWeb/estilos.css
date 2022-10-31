@@ -5,32 +5,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
 
 body {
-    margin: 0;
-    padding: 0;
-    background: #fffffa;
-    font-family: 'Poppins', sans-serif;
-	 
-	  align-items: center;
-    }
+  margin: 0;
+  padding: 0 0;
+  background: #fffffa;
+  font-family: 'Poppins', sans-serif;
+  display: block;
+  
+}
 
   
 header {
-  width: 100%;
-  overflow: hidden;
-  background:#f4f9f3;
-  margin-bottom: 20px;
+  width:100%; /* Establecemos que el header abarque el 100% del documento */
+  overflow:hidden; /* Eliminamos errores de float */
+  background:#F4F9F3;
+  margin-bottom:20px;
 }
+
 .wrapper {
-    width: 90%;
-    max-width: 1200px;
-    margin:auto;
-    overflow: hidden;
+  width:90%; /* Establecemos que el ancho sera del 90% */
+  max-width:90%; /* Aqui le decimos que el ancho máximo sera de 90% */
+  margin:auto; /* Centramos los elementos */
+  overflow:hidden; /* Eliminamos errores de float */
 }
 
 header .logo {
-  color: #000;
-  font-size:  0px; /*Tamano del Liber-Arte en el header grande */
-  line-height: 50px;
+  
+  
   float:left;
 }
 header nav {
@@ -41,7 +41,7 @@ header nav a{
     display: inline-block;
     color: #000;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 8px 15px;
     line-height:normal;
     font-size: 20px;
     font-weight: bold;
@@ -52,11 +52,12 @@ header nav a{
 } 
 header nav a:hover {
   background: #009b02;
-  border-radius: 50px;
+  border-radius: 40px;
 }
 .header2 {
   position:fixed;
-  height: 125px;  /* lo grande del segundo header */
+  height: 150px;  /* lo grande del segundo header */
+  z-index:10000;
 }
 .header2 .logo {
   line-height: 100px;
@@ -65,7 +66,7 @@ header nav a:hover {
 .header2 nav {
   line-height: 100px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   header .logo,
   header nav {
     width:100%;
@@ -84,7 +85,7 @@ header nav a:hover {
   font-size: 15px;
   height: auto;
   width: 100%;
-  text-align:left;
+  text-align:center;
   line-height: 25px; 
   background:#009b02;
 }
@@ -124,54 +125,126 @@ align-items: center;
     color: rgb(19, 4, 83);
     font-size: 32px;
     font-family: 'Fredoka One', cursive;
+    text-align: center;
   }
   
   .subtitulo {
     font-family: 'Poppins', sans-serif;
     color: rgb(86, 3, 97);
     font-size: 20px;
+    text-align: center;
   }
   .subsubtitulo {
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
     font-size: 20px;
+    text-align: center;
   }
   /*-------------------- carousel-----------------------------*/
 .carousel__contenedor{
   position: relative;
 }
-.carousel__anterior,
-.carousel__siguiente{
+.carousel__siguiente1,
+.carousel__anterior1{
   position: absolute;
   display: block;
-  width: 30px;
-  height: 30px;
-  border: none;
-  top: calc(50% - 35px);
+  width: 50px;
+  height: 50px;
+  top: calc(50% - 45px);
   cursor:pointer;
   line-height: 30px;
   text-align: center;
-  background: none;
+  
   color: #ff0000;
-  opacity: 20%;
+  opacity: 50%;
+}
+.carousel__anterior1:hover,
+.carousel__siguiente1:hover{
+  opacity: 100%;
+}
+.carousel__anterior1{
+  left:-5px;
+}
+.carousel__siguiente1{
+  right:-5px;
+}
+
+.carousel__siguiente,
+.carousel__anterior {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  top: calc(50% - 45px);
+  cursor:pointer;
+  line-height: 30px;
+  text-align: center;
+  
+  color: #ff0000;
+  opacity: 50%;
 }
 .carousel__anterior:hover,
 .carousel__siguiente:hover{
   opacity: 100%;
 }
 .carousel__anterior{
-  left: -30px;
+  left:-5px;
 }
 .carousel__siguiente{
-  right: -30px;
+  right:-5px;
 }
-.carousel__elemento{
-  text-align: center;
-  max-width: 250px;
+
+.carousel__lista {
+	overflow: hidden;
 }
-.contenedor {
-	max-width: 1200px;
-	width: 90%;
-	margin: auto;
-  overflow:hidden;
+
+.carousel__elemento {
+	text-align: center;
+}
+.carousel__elemento {
+  max-width: 450px;
+  max-height: 450px;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #009b02;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+.carousel__indicadores1 .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #009b02;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores1 .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores1 .glider-dot.active {
+	opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	}
 }
