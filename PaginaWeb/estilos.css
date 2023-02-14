@@ -171,12 +171,14 @@ header nav a:hover {
   max-height: 450px;
 }
 .carousel__indicadores .glider-dot {
-	display: block;
-	width: 30px;
-	height: 4px;
-	background: #009b02;
-	opacity: .2;
-	border-radius: 0;
+	  Width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #d6d6d6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
 }
 .carousel__indicadores .glider-dot:hover {
 	opacity: .5;
@@ -219,12 +221,14 @@ header nav a:hover {
   right:0px;
 }
 .carousel__indicadores1 .glider-dot {
-	display: block;
-	width: 30px;
-	height: 4px;
-	background: #009b02;
-	opacity: .2;
-	border-radius: 0;
+	Width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #d6d6d6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity .2s ease;
+  border-radius: 30px;
 }
 .carousel__indicadores1 .glider-dot:hover {
 	opacity: .5;
@@ -258,12 +262,14 @@ header nav a:hover {
   right:0px;
 }
 .carousel__indicadores2 .glider-dot {
-	display: block;
-	width: 30px;
-	height: 4px;
-	background: #009b02;
-	opacity: .2;
-	border-radius: 0;
+  Width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #d6d6d6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity .2s ease;
+  border-radius: 30px;
 }
 .carousel__indicadores2 .glider-dot:hover {
 	opacity: .5;
