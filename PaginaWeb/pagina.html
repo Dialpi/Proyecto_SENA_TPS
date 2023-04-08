@@ -1,249 +1,257 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Liber-Arte</title>
-        <link rel="stylesheet" href="./estilos.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css"> <!-- es el glider-js que nos ayuda a hacer el carousel  -->
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <!--Esta etiqueta se usa para que nos permitirá adaptar nuestro sitio a dispositivos moviles. -->
-        
-    </head>
-     <body> 
 
-        <header class="header">
-            <div class="topheader">
-                <div class="wrapper">
-                    <div class="telefono">
-                        <span id="telefono" onclick = "location.href='https://api.whatsapp.com/send?phone=573118216336&text=Estoy%20interesado%20en%20sus%20productos'"><i class="fa-solid fa-phone"></i>3118216336</span>
-                    </div>
-                    <nav>
-                        <a  onclick = "location.href='./inicia_sesion.html'" ><i class="fa-regular fa-user"></i> Inicia sesion</button>
-                        <a  onclick = "location.href='./registro.html'" ><i class="fa-regular fa-user"></i>  Registrate</button>
-                    </nav>
-                </div>
-            </div>
-             <div class="wrapper">
-                <div class="logo">
-                     <img src="./Imagenes/logo.png"  width="300px">
+<head>
+    <meta charset="utf-8" />
+    <title>Liber-Arte</title>
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css"><!-- es el glider-js que nos ayuda a hacer el carousel  -->
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="topheader">
+            <div class="wrapper">
+                <div class="telefono">
+                    <span id="telefono"
+                        onclick="location.href='https://api.whatsapp.com/send?phone=573118216336&text=Estoy%20interesado%20en%20sus%20productos'"><i
+                            class="fa-solid fa-phone"></i>3118216336</span>
                 </div>
                 <nav>
-                    <a href="./pagina.html"></i>Inicio</a>
-                    <a href="./placas.html">Placas</a>
-                    <a href="./tasa.html">Pocillos</a>
-                    <a href="./otros.html">Otros</a>
-                    <a href="./contacto.html">Contacto</a>
+                    <a onclick="location.href='./inicia_sesion.html'"><i class="fa-regular fa-user"></i> Inicia
+                        sesion</button>
+                        <a onclick="location.href='./registro.html'"><i class="fa-regular fa-user"></i>
+                            Registrate</button>
                 </nav>
             </div>
-        </header>
-        <section class="contenido wrapper">
-                <div class="wrapper">
-            
-                <h1 class="titulo">Liber-Arte</h1> 
-                <p><h3 class="subsubtitulo">Somos una empresa con sentido social ya que trabajamos con el personal de la polica y fuerzas militares privados de la liberdad y pospenados.
-                     
-                Nos dedicamos a comercializar las artesanias que ellos fabrican </h3> </p>
-                    <h2 class="subtitulo">Placa personalizada de mesa</h2>
-                        <div class="carousel">
-                        <div class="carousel__contenedor">
-                            <button aria-label="anterior" class="carousel__anterior">
-                                <i class="fas fa-chevron-left"></i>
-                            </button>
-            
-                            <div class="carousel__lista">
-                                <div class="carousel__elemento">
-                                    <img src="Imagenes/Placa mesa/placam1.jpeg" alt="placam1">
-                                
-                                </div>
-                            
-                                <div class="carousel__elemento">
-                                    <img src="Imagenes/Placa mesa/placam2.jpeg" alt="placam2">
-                                </div>
-                            
-                            
-                                <div class="carousel__elemento">
-                                    <img src="Imagenes/Placa mesa/placam3.jpeg" alt="placam3">
-                                </div>
-                           
-                            
-                                <div class="carousel__elemento">
-                                    <img src="Imagenes/Placa mesa/placam4.jpeg" alt="placam4">
-                                </div>
-                            
-                            
-                                <div class="carousel__elemento">
-                                    <img src="Imagenes/Placa mesa/placam5.jpeg" alt="placam5">
-                                </div>
-                            
-                                <div class="carousel__elemento">
-                                    <img src="Imagenes/Placa mesa/placam6.jpeg" alt="placam6">
-                                </div>
-                           
-                                <div class="carousel__elemento">
-                                    <img src="Imagenes/Placa mesa/placam7.jpeg" alt="placam7">
-                                </div>
-                            
-                                <div class="carousel__elemento">
-                                    <img src="Imagenes/Placa mesa/placam8.jpeg" alt="placam8">
-                                </div>
-                            
-                                <div class="carousel__elemento">
-                                    <img src="Imagenes/Placa mesa/placam9.jpeg" alt="placam9">
-                                </div>
-                            
-                                <div class="carousel__elemento">
-                                    <img src="Imagenes/ver máspng.png" alt="verMas" onclick = "location.href='./placas.html'">
-                                </div>
-                            
-                            </div>
-                            <button aria-label="siguiente" class="carousel__siguiente">
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
-                        </div>
-                        <div role="tablist" class="carousel__indicadores"></div>
-                        </div> 
-                    <h2 class="subtitulo">Pocillos personalizados</h2>
-                        <div class="carousel">
-                            <div class="carousel__contenedor">
-                                <button aria-label="anterior" class="carousel__anterior1">
-                                    <i class="fas fa-chevron-left"></i>
-                                </button>
-                
-                                <div class="carousel__lista1">
-                                    <div class="carousel__elemento">
-                                        <img src="Imagenes/tasas/tasa1.jpeg" alt="Pocillo">
-                                    
-                                    </div>
-                                
-                                    <div class="carousel__elemento">
-                                        <img src="Imagenes/tasas/tasa2.jpeg" alt="Pocillo">
-                                    </div>
-                                
-                                
-                                    <div class="carousel__elemento">
-                                        <img src="Imagenes/tasas/tasa3.jpeg" alt="Pocillo">
-                                    </div>
-                               
-                                
-                                    <div class="carousel__elemento">
-                                        <img src="Imagenes/tasas/tasa4.jpeg" alt="Pocillo">
-                                    </div>
-                                
-                                
-                                    <div class="carousel__elemento">
-                                        <img src="Imagenes/tasas/tasa5.jpeg" alt="Pocillo">
-                                    </div>
-                                
-                                    <div class="carousel__elemento">
-                                        <img src="Imagenes/tasas/tasa6.jpeg" alt="Pocillo">
-                                    </div>
-                               
-                                    <div class="carousel__elemento">
-                                        <img src="Imagenes/tasas/tasa7.jpeg" alt="Pocillo">
-                                    </div>
-                                
-                                    <div class="carousel__elemento">
-                                        <img src="Imagenes/tasas/tasa8.jpeg" alt="Pocillo">
-                                    </div>
-                                
-                                    <div class="carousel__elemento">
-                                        <img src="Imagenes/tasas/tasa9.jpeg" alt="Pocillo">
-                                    </div>
-                                
-                                    <div class="carousel__elemento">
-                                        <img src="Imagenes/ver máspng.png" alt="verMas1" onclick = "location.href='./tasa.html'">
-                                    </div>
-                                
-                                </div>
-                                <button aria-label="siguiente" class="carousel__siguiente1">
-                                    <i class="fas fa-chevron-right"></i>
-                                </button>
-                            </div>
-                            <div role="tablist" class="carousel__indicadores1"></div>
-                        </div> 
-                     <h2 class="subtitulo">Busos estapados</h2>
-                        <div class="carousel">
-                            <div class="carousel__contenedor">
-                                <button aria-label="anterior" class="carousel__anterior2">
-                                    <i class="fas fa-chevron-left"></i>
-                                </button>
-                
-                                <div class="carousel__lista2">
-                                    <div class="carousel__elemento">
-                                        <img src="imagenes/saco1.jpeg" alt="saco1">
-                                    </div>
-                                    <div class="carousel__elemento">
-                                        <img src="imagenes/saco2.jpeg" alt="saco2">
-                                    </div>
-                                    <div class="carousel__elemento">
-                                        <img src="imagenes/saco3.jpeg" alt="saco3">
-                                    </div>
-                                    <div class="carousel__elemento">
-                                        <img src="imagenes/saco4.jpeg" alt="saco4">
-                                    </div>
-                                    <div class="carousel__elemento">
-                                        <img src="imagenes/saco5.jpeg" alt="saco5">
-                                    </div>
-                                    <div class="carousel__elemento">
-                                        <img src="imagenes/saco6.jpeg" alt="saco6">
-                                    </div>
-                                    <div class="carousel__elemento">
-                                        <img src="imagenes/saco7.jpeg" alt="saco7">
-                                    </div>
-                                    <div class="carousel__elemento">
-                                        <img src="imagenes/saco8.jpeg" alt="saco8">
-                                    </div>
-                                    <div class="carousel__elemento">
-                                        <img src="imagenes/saco9.jpeg" alt="saco9">
-                                    </div>
-                                    <div class="carousel__elemento">
-                                        <img src="Imagenes/ver máspng.png" alt="verMas2" onclick = "location.href='./otros.html'">
-                                    </div>
-                                </div>
-                
-                                <button aria-label="siguiente" class="carousel__siguiente2">
-                                    <i class="fas fa-chevron-right"></i>
-                                </button>
-                            </div>
-                            <div role="tablist" class="carousel__indicadores2"></div>
-                        </div> 
         </div>
-                   
-                    
-        </section>
-        <footer class="pie-pagina">
-            <div class="grupo-1">
-                <div class="box">
-                    <span>
-                        <a href="./pagina.html">
-                            <img src="./Imagenes/logo.png" alt="Logo de Liber-Arte" width="300px">
-                        </a>
-                    </span>
-                </div>
-                <div class="box">
-                    <h2>-SOBRE NOSOTROS</h2>
-                    <p>Por que creemos en segundas oportunidades.</p>
-                    <p>Realizamos función social con policías y militares privados de la libertad</p>
-                </div>
-                <div class="box">
-                    <h2>-SIGUENOS</h2>
-                    <div class="red-social">
-                        <a href="https://web.facebook.com/people/Liber-Arte/100068606932760/" class="fa fa-facebook"></a>
-                        <a href="https://www.instagram.com/liberarte.ponal/" class="fa fa-instagram"></a>
-                        <a href="https://api.whatsapp.com/send?phone=573118216336&text=Estoy%20interesado%20en%20sus%20productos" class= "fa-solid fa-headset"></a>
+        <div class="wrapper">
+            <div class="logo">
+                <a onclick="location.href='./pagina.html'"> <img src="./Imagenes/logo.png" width="300px"></a>
+            </div>
+            <nav>
+                <a href="./pagina.html"></i>Inicio</a>
+                <a href="./placas.html">Placas</a>
+                <a href="./tasa.html">Pocillos</a>
+                <a href="./otros.html">Otros</a>
+                <a href="./contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <section class="contenido wrapper">
+        <div class="wrapper">
+
+            <h1 class="titulo">Liber-Arte</h1>
+            <p>
+            <h3 class="subsubtitulo">Somos una empresa con sentido social ya que trabajamos con el personal de la polica
+                y fuerzas militares privados de la liberdad y pospenados.
+
+                Nos dedicamos a comercializar las artesanias que ellos fabrican </h3>
+            </p>
+            <h2 class="subtitulo">Placa personalizada de mesa</h2>
+            <div class="carousel">
+                <div class="carousel__contenedor">
+                    <button aria-label="anterior" class="carousel__anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <div class="carousel__lista">
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/Placa mesa/placam1.jpeg" alt="placam1">
+
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/Placa mesa/placam2.jpeg" alt="placam2">
+                        </div>
+
+
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/Placa mesa/placam3.jpeg" alt="placam3">
+                        </div>
+
+
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/Placa mesa/placam4.jpeg" alt="placam4">
+                        </div>
+
+
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/Placa mesa/placam5.jpeg" alt="placam5">
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/Placa mesa/placam6.jpeg" alt="placam6">
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/Placa mesa/placam7.jpeg" alt="placam7">
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/Placa mesa/placam8.jpeg" alt="placam8">
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/Placa mesa/placam9.jpeg" alt="placam9">
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/ver máspng.png" alt="verMas" onclick="location.href='./placas.html'">
+                        </div>
+
                     </div>
+                    <button aria-label="siguiente" class="carousel__siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div role="tablist" class="carousel__indicadores"></div>
+            </div>
+            <h2 class="subtitulo">Pocillos personalizados</h2>
+            <div class="carousel">
+                <div class="carousel__contenedor">
+                    <button aria-label="anterior" class="carousel__anterior1">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <div class="carousel__lista1">
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/tasas/tasa1.jpeg" alt="Pocillo">
+
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/tasas/tasa2.jpeg" alt="Pocillo">
+                        </div>
+
+
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/tasas/tasa3.jpeg" alt="Pocillo">
+                        </div>
+
+
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/tasas/tasa4.jpeg" alt="Pocillo">
+                        </div>
+
+
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/tasas/tasa5.jpeg" alt="Pocillo">
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/tasas/tasa6.jpeg" alt="Pocillo">
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/tasas/tasa7.jpeg" alt="Pocillo">
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/tasas/tasa8.jpeg" alt="Pocillo">
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/tasas/tasa9.jpeg" alt="Pocillo">
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/ver máspng.png" alt="verMas1" onclick="location.href='./tasa.html'">
+                        </div>
+
+                    </div>
+                    <button aria-label="siguiente" class="carousel__siguiente1">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div role="tablist" class="carousel__indicadores1"></div>
+            </div>
+            <h2 class="subtitulo">Busos estapados</h2>
+            <div class="carousel">
+                <div class="carousel__contenedor">
+                    <button aria-label="anterior" class="carousel__anterior2">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <div class="carousel__lista2">
+                        <div class="carousel__elemento">
+                            <img src="imagenes/saco1.jpeg" alt="saco1">
+                        </div>
+                        <div class="carousel__elemento">
+                            <img src="imagenes/saco2.jpeg" alt="saco2">
+                        </div>
+                        <div class="carousel__elemento">
+                            <img src="imagenes/saco3.jpeg" alt="saco3">
+                        </div>
+                        <div class="carousel__elemento">
+                            <img src="imagenes/saco4.jpeg" alt="saco4">
+                        </div>
+                        <div class="carousel__elemento">
+                            <img src="imagenes/saco5.jpeg" alt="saco5">
+                        </div>
+                        <div class="carousel__elemento">
+                            <img src="imagenes/saco6.jpeg" alt="saco6">
+                        </div>
+                        <div class="carousel__elemento">
+                            <img src="imagenes/saco7.jpeg" alt="saco7">
+                        </div>
+                        <div class="carousel__elemento">
+                            <img src="imagenes/saco8.jpeg" alt="saco8">
+                        </div>
+                        <div class="carousel__elemento">
+                            <img src="imagenes/saco9.jpeg" alt="saco9">
+                        </div>
+                        <div class="carousel__elemento">
+                            <img src="Imagenes/ver máspng.png" alt="verMas2" onclick="location.href='./otros.html'">
+                        </div>
+                    </div>
+
+                    <button aria-label="siguiente" class="carousel__siguiente2">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div role="tablist" class="carousel__indicadores2"></div>
+            </div>
+        </div>
+
+
+    </section>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <span>
+                    <a href="./pagina.html">
+                        <img src="./Imagenes/logo.png" alt="Logo de Liber-Arte" width="300px">
+                    </a>
+                </span>
+            </div>
+            <div class="box">
+                <h2>-SOBRE NOSOTROS</h2>
+                <p>Por que creemos en segundas oportunidades.</p>
+                <p>Realizamos función social con policías y militares privados de la libertad</p>
+            </div>
+            <div class="box">
+                <h2>-SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://web.facebook.com/people/Liber-Arte/100068606932760/" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/liberarte.ponal/" class="fa fa-instagram"></a>
+                    <a href="https://api.whatsapp.com/send?phone=573118216336&text=Estoy%20interesado%20en%20sus%20productos"
+                        class="fa-solid fa-headset"></a>
                 </div>
             </div>
-            <div class="grupo-2">
-                <small>&copy; 2022 <b>Liber-Arte</b> - Todos los Derechos Reservados.</small>
-            </div>
-        </footer>
-        
-        <script src="./header.js"></script>
-        <script src="carousel.js"></script>
-        <script src="http://code.jquery.com/jquery-latest.js"></script><!-- es el que nos ayuda a  que el header baje cuando le hacemos scroll-->
-        <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script> <!-- es el glider-js que nos ayuda a hacer el carousel  -->
-        <script src="https://kit.fontawesome.com/32f04e2b6c.js" crossorigin="anonymous"></script><!-- Se usa para sacar iconos o fuentes -->
-     </body>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Liber-Arte</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+    <script src="./JavaScrip/carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
+    <!-- es el glider-js que nos ayuda a hacer el carousel  -->
+    <script src="https://kit.fontawesome.com/32f04e2b6c.js" crossorigin="anonymous"></script>
+    <!-- Se usa para sacar iconos o fuentes -->
+</body>
 
 
 </html>

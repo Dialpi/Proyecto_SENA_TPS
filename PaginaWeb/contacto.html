@@ -1,74 +1,83 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Liber-Arte</title>
-        <link rel="stylesheet" href="./contacto.css">
-        <script src="pagina.js"></script>
-        <script src="https://code.jquery.com/jquery-latest.js"></script>
-        <script src="header.js"></script>
-    
-    </head>
-    <body>
-        
-    
-    <div class="inicio">
-        <header>
-            <div class="topheader">
-                <span id="telefono">3118216336</span>
-                 <button onclick = "location.href='./inicia_sesion.html'" >Inicia sesion</button>
-                  <button onclick = "location.href='./registro.html'" >Registrate</button>
-             </div>
-             <div class="wrapper">
-                <div class="logo">
-                    <img  src="./Imagenes/logo.jpeg" alt="Logo estampados" onclick = "location.href='./pagina.html'">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Liber-Arte</title>
+    <link rel="stylesheet" href="./CSS/contacto.css">
+    <script src="pagina.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="topheader">
+            <div class="wrapper">
+                <div class="telefono">
+                    <span id="telefono"
+                        onclick="location.href='https://api.whatsapp.com/send?phone=573118216336&text=Estoy%20interesado%20en%20sus%20productos'"><i
+                            class="fa-solid fa-phone"></i>3118216336</span>
                 </div>
                 <nav>
-                    <a href="./pagina.html">Inicio</a>
-                    <a href="./placas.html">Placas</a>
-                    <a href="./tasa.html">Pocillos</a>
-                    <a href="./otros.html">Otros</a>
-                    <a href="./contacto.html">Contacto</a>
+                    <a onclick="location.href='./inicia_sesion.html'"><i class="fa-regular fa-user"></i> Inicia
+                        sesion</button>
+                        <a onclick="location.href='./registro.html'"><i class="fa-regular fa-user"></i>
+                            Registrate</button>
                 </nav>
             </div>
-        </header>
-        <div class="contenido-principal">
+        </div>
+        <div class="wrapper">
+            <div class="logo">
+                <a onclick="location.href='./pagina.html'"> <img src="./Imagenes/logo.png" width="300px"></a>
+            </div>
+            <nav>
+                <a href="./pagina.html"></i>Inicio</a>
+                <a href="./placas.html">Placas</a>
+                <a href="./tasa.html">Pocillos</a>
+                <a href="./otros.html">Otros</a>
+                <a href="./contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>  
+   
             <form action="">
             <h2>CONTACTO</h2>
             <input type="text" name="Nombre" placeholder="Nombre" required>
             <input type="text" name="Correo" placeholder="Correo">
             <input type="text" name="telefono" placeholder="Telefono">
             <textarea name="Mensaje" placeholder="Escriba aqui su mensaje"></textarea>
-            <input type="button" value="ENVIAR" id="boton" onclick = "location.href='./pagina.html'">
-            </form>
+            <input type="button" value="ENVIAR" id="boton" onclick="location.href='./pagina.html'">
+             </form>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <span>
+                    <a href="./pagina.html">
+                        <img src="./Imagenes/logo.png" alt="Logo de Liber-Arte" width="300px">
+                    </a>
+                </span>
+            </div>
+            <div class="box">
+                <h2>-SOBRE NOSOTROS</h2>
+                <p>Por que creemos en segundas oportunidades.</p>
+                <p>Realizamos función social con policías y militares privados de la libertad</p>
+            </div>
+            <div class="box">
+                <h2>-SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://web.facebook.com/people/Liber-Arte/100068606932760/" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/liberarte.ponal/" class="fa fa-instagram"></a>
+                    <a href="https://api.whatsapp.com/send?phone=573118216336&text=Estoy%20interesado%20en%20sus%20productos" class= "fa-solid fa-headset"></a>
+                </div>
+            </div>
         </div>
-        <footer class="pie-pagina">
-            <div class="grupo-1">
-                <div class="box">
-                    <figure>
-                        <a href="./pagina.html">
-                            <img src="./Imagenes/logo.jpeg" alt="Logo de Liber-Arte">
-                        </a>
-                    </figure>
-                </div>
-                <div class="box">
-                    <h2>SOBRE NOSOTROS</h2>
-                    <p>Por que creemos en segundas oportunidades.</p>
-                    <p>Realizamos función social con policías y militares privados de la libertad</p>
-                </div>
-                <div class="box">
-                    <h2>SIGUENOS</h2>
-                    <div class="red-social">
-                        <a href="https://web.facebook.com/people/Liber-Arte/100068606932760/" class="fa fa-facebook"></a>
-                        <a href="https://www.instagram.com/liberarte.ponal/" class="fa fa-instagram"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="grupo-2">
-                <small>&copy; 2022 <b>Liber-Arte</b> - Todos los Derechos Reservados.</small>
-            </div>
-        </footer>
-        
-        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    </body>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Liber-Arte</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/32f04e2b6c.js" crossorigin="anonymous"></script>
+    <!-- Se usa para sacar iconos o fuentes -->
+</body>
+
 </html>
