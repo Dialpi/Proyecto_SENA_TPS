@@ -12,11 +12,8 @@ body {
 form {
   width: 450px;
   margin: auto;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 10px 20px;
-  box-sizing: border-box;
-  border-radius: 7px;
- 
+  padding: 10px 30px;
+
   
 }
 .inicio h2 {
@@ -27,7 +24,7 @@ form {
   margin-bottom: 20px;
   
 }
-input, textarea {
+.datos, textarea {
   width: 100%;
   margin-bottom: 20px;
   padding: 7px;
@@ -39,11 +36,22 @@ textarea {
   max-height: 200px;
   max-width: 100%;
 }
-#boton {
-  background: #31384A;
-  color: #fff;
+.formulario h2 {
+  font-size: 2em;
+  color: #Ffff;
+  text-align: center;
+}
+.sumid {
+  font-size: 1.2em;
+  background: #ffffff;
+  color: #009b02;
   padding: 20px;
-
+  border: none;
+  border-radius: 40px;
+  padding:20px 60px;
+ margin-left: 25%;
+ font-weight: bold;
+ 
 }
 #boton:hover {
   cursor: pointer;
@@ -56,7 +64,88 @@ textarea {
 .inicio {
   padding: 20px;
 }
+.formulario{
+  background-color: #009b02;
+  margin-top: -100px;
+}
+@media (max-width:900px) {
+  .formulario{
+    margin-top: -20px;
+  }
+}
+main img{
+  width: 500px;
+  height: 500px;
+}
+.imagen {
+  float: right;
+  margin: auto;
+  margin-right: 20%;
+  padding: 50px 0px;
+  width: 400px; 
+  height: 440px;
+  
+}
+@media screen and (max-width: 900px) {
+  .imagen{
+ margin-right: 0%;
+ padding: 50px 100px;
+height: 300px;
+float: right;
+max-width: 100%;
+float: right;
+  }
+}
+@media screen and (max-width: 900px) {
+  main img{
+    width: 300px;
+    height: 300px;
+  }
+}
 
+.botonw {
+font-size: 2em;
+ float: left;
+ text-align: center;
+ margin-top: 20px;
+ width: 40%;
+ height: 300px;
+ left: 50%;
+ top: 50%;
+ text-transform:capitalize;
+ transform: translateX(-100%) translateY(-30%);
+ position:absolute;
+ line-height:1;
+ 
+ 
+}
+@media screen and (max-width: 900px) {
+  .botonw{
+    font-size: 1em;
+    transform: translateX(-100%) translateY(10%);
+  }
+}
+
+.servicoc {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  line-height: 20px;
+  
+}
+main a{
+  display: inline-block;
+  color:rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 8px 15px;
+  line-height:normal;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #009b02;
+  border-radius: 20px;
+  
+} 
 
 
 /*------------------------------------------------------header--------------------------------------------------------------------*/
@@ -141,6 +230,9 @@ header nav a:hover {
     line-height: 20px; 
     }
   }
+
+
+
 /*--------------------------------------------------- footer-----------------------------------------------------------------*/
 /*:::::Pie de Pagina*/
 .pie-pagina{
@@ -192,7 +284,7 @@ header nav a:hover {
 }
 .pie-pagina .grupo-2{
   background-color: #009b02;
-  padding: 15px 10px;
+  padding: 1px 10px;
   text-align: center;
   color: #fff;
 }
