@@ -1,0 +1,30 @@
+
+
+
+DROP TABLE IF EXISTS usuarios;
+CREATE TABLE IF NOT EXISTS usuarios (
+  nom varchar(50) NOT NULL,
+  correo varchar(50) NOT NULL,
+  pass varchar(50) NOT NULL,
+  PRIMARY KEY (correo)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+DROP TABLE IF EXISTS categoria_productos;
+CREATE TABLE IF NOT EXISTS categoria_productos (
+  id int NOT NULL AUTO_INCREMENT,
+  nombre varchar(50) DEFAULT NULL,
+  PRIMARY KEY (id)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+DROP TABLE IF EXISTS productos;
+CREATE TABLE IF NOT EXISTS `productos` (
+  id int NOT NULL AUTO_INCREMENT,
+  nombre varchar(50) DEFAULT NULL,
+  descripcion varchar(255) DEFAULT NULL,
+  precio decimal(10,2) DEFAULT NULL,
+  categoria_id int DEFAULT NULL,
+  PRIMARY KEY (id),
+  KEY categoria_id (categoria_id)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
