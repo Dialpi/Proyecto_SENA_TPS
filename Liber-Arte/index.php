@@ -34,7 +34,11 @@ header('location: productos_tabla.php');
 <input type="email" name="txtcorreo" class="CajaTexto" autocomplete="off" required>
 
 <div class="TextoCajas">• Ingresar password</div>
-<input type="password"  name="txtpassword" class="CajaTexto" autocomplete="off" required>
+<input type="password" id="txtpassword" name="txtpassword" class="CajaTexto" autocomplete="off" required>
+
+<div class="CheckBox1">
+<input type="checkbox" onclick="verpassword()" >Mostrar password
+</div>
 
 <div>
 <input type="submit" value="Iniciar sesión" class="BtnLogin" name="btningresar" >
@@ -64,5 +68,20 @@ header('location: productos_tabla.php');
 </div>
  
 </body>
+<script>
+
+function verpassword()
+  {
+  var tipo = document.getElementById("txtpassword");
+    if(tipo.type == "password")
+	  {
+        tipo.type = "text";
+      }
+	  else
+	  {
+        tipo.type = "password";
+      }
+  }
+</script>
 <script src="boton_formulario.js"></script>
 </html>

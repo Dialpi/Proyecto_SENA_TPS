@@ -3,7 +3,7 @@ include('conexion.php');
 include("barra_lateral.php");
 ?>
 <html>
-<title>VaidrollTeam</title>
+<title>liber-Arte</title>
 <body>
 <div class="ContenedorPrincipal">	
 <?php

@@ -16,7 +16,7 @@ $mostrar=mysqli_fetch_array($buscandousu);
 
 <html>
 <head>
-<title>VaidrollTeam</title>
+<title>Liber-Arte</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -25,8 +25,12 @@ $mostrar=mysqli_fetch_array($buscandousu);
 <div class="BarraLateral">
 
 <ul>
+<div class="NomUsuario"><?php echo $mostrar['nom']?></div>
+<hr>
+<li><a href="principal.php" >• Inicio</a></li>
+<li><a href="usuarios_tabla.php" >• Usuarios</a></li>
+<li><a href="categoria_tabla.php" >• Categorías</a></li>
 <li><a href="productos_tabla.php" >• Productos</a></li>
-<li><a href="categoria_tabla.php" >• Categoría</a></li>
 <li><a href="cerrar_sesion.php" >• Cerrar sesión</a></li>
 </ul>
 <hr>
