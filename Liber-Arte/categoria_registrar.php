@@ -6,7 +6,7 @@ $pagina = $_GET['pag'];
 ?>
 <html>
 <head>    
-<title>VaidrollTeam</title>
+<title>Liber-Arte</title>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="style.css">
 </head>

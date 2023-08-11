@@ -10,7 +10,7 @@ $mostrar=mysqli_fetch_array($buscandousu);
 ?>
 
 <html>
-<title>VaidrollTeam</title>
+<title>liber-Arte</title>
 <script>
 		function verhorafor12() {
 			var fecha = new Date();
