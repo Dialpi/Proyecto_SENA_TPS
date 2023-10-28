@@ -76,6 +76,14 @@ header {
   margin:auto; /* Centramos los elementos */
   overflow:hidden; /* Eliminamos errores de float */
 }
+.wrapper1 {
+  width:90%; /* Establecemos que el ancho sera del 90% */
+  max-width:90%; /* Aqui le decimos que el ancho máximo sera de 90% */
+  margin:auto; /* Centramos los elementos */
+  overflow:hidden; /* Eliminamos errores de float */
+  margin-bottom: 1em;
+}
+  
 header .logo {
   float:left;
   cursor:pointer; cursor: hand	
@@ -143,154 +151,55 @@ header nav a:hover {
     line-height: 20px; 
     }
   }
-  /*--------------------------------------------------carousel-----------------------------------------------*/
-.carousel__contenedor{
-  position: relative;
-}
-.carousel__siguiente,
-.carousel__anterior {
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 50px;
-  top: calc(50% - 45px);
-  cursor:pointer;
-  line-height: 30px;
-  text-align: center;
-  z-index:10000;
-  color: #009b02;
-  opacity: 50%;
-}
-.carousel__anterior:hover,
-.carousel__siguiente:hover{
-  opacity: 100%;
-}
-.carousel__anterior{
-  left:0px;
-}
-.carousel__siguiente{
-  right:0px;
-}
-.carousel__lista {
-	overflow: hidden;
-}
-.carousel__elemento {
-	text-align: center;
-}
-.carousel__elemento {
-  max-width: 450px;
-  max-height: 450px;
-}
-.carousel__indicadores .glider-dot {
-	  Width: 10px;
-    height: 10px;
-    margin: 5px 7px;
-    background: #d6d6d6;
-    display: block;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: visible;
-    transition: opacity .2s ease;
-    border-radius: 30px;
-}
-.carousel__indicadores .glider-dot:hover {
-	opacity: .5;
-}
-.carousel__indicadores .glider-dot.active {
-	opacity: 1;
-}
-@media screen and (max-width: 800px) {
-	.contenido-principal {
-		flex-direction: column;
-	}
-
-	.contenido-principal > * {
-		width: 100%;
-	}
-}
-/*------------------------------------ carousel1-----------------------------------------*/
-.carousel__siguiente1,
-.carousel__anterior1{
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 50px;
-  top: calc(50% - 45px);
-  cursor:pointer;
-  line-height: 30px;
-  text-align: center;
-  z-index:1000000000;
-  color: #009b02;
-  opacity: 50%;
-}
-.carousel__anterior1:hover,
-.carousel__siguiente1:hover{
-  opacity: 100%;
-}
-.carousel__anterior1{
-  left:0px;
-}
-.carousel__siguiente1{
-  right:0px;
-}
-.carousel__indicadores1 .glider-dot {
-	Width: 10px;
-  height: 10px;
-  margin: 5px 7px;
-  background: #d6d6d6;
-  display: block;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: visible;
-  transition: opacity .2s ease;
-  border-radius: 30px;
-}
-.carousel__indicadores1 .glider-dot:hover {
-	opacity: .5;
-}
-.carousel__indicadores1 .glider-dot.active {
-	opacity: 1;
-}
-/*----------------------------------------------carousel2-------------------------------------------*/
-.carousel__siguiente2,
-.carousel__anterior2{
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 50px;
-  top: calc(50% - 45px);
-  cursor:pointer;
-  line-height: 30px;
-  text-align: center;
-  z-index:1000000000;
-  color: #009b02;
-  opacity: 50%;
-}
-.carousel__anterior2:hover,
-.carousel__siguiente2:hover{
-  opacity: 100%;
-}
-.carousel__anterior2{
-  left:0px;
-}
-.carousel__siguiente2{
-  right:0px;
-}
-.carousel__indicadores2 .glider-dot {
-  Width: 10px;
-  height: 10px;
-  margin: 5px 7px;
-  background: #d6d6d6;
-  display: block;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: visible;
-  transition: opacity .2s ease;
-  border-radius: 30px;
-}
-.carousel__indicadores2 .glider-dot:hover {
-	opacity: .5;
-}
-.carousel__indicadores2 .glider-dot.active {
-	opacity: 1;
-}
+  /*--------------------------------------------------contenido-----------------------------------------------*/
+  .portada {
+    width:90%; 
+    max-width:90%; 
+    margin:auto; 
+    overflow:hidden; 
+    margin-bottom: 1em;
+  }
+  
+  .wrapper1 .titulo {
+    float:left;	
+  } 
+  .wrapper1 nav {
+    float:right;
+      line-height: 10px;
+      cursor:pointer; cursor: hand	
+    } 
+  .slider {
+    width: 105vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+  }
+  
+  .slider .slide {
+    width: 200px;
+  }
+  
+  .slider .slide img {
+    width: 100%;
+  }
+  
+  @keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-150px * 7));
+        transform: translateX(calc(-150px * 7));
+    }
+  }
 /*--------------------------------------------------- footer-----------------------------------------------------------------*/
 /*:::::Pie de Pagina*/
 .pie-pagina{
