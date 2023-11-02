@@ -31,6 +31,8 @@ $mostrar=mysqli_fetch_array($buscandousu);
 <li><a href="usuarios_tabla.php" >• Usuarios</a></li>
 <li><a href="categoria_tabla.php" >• Categorías</a></li>
 <li><a href="productos_tabla.php" >• Productos</a></li>
+<hr>
+<li><a href="../index.html" >• pagina principal </a></li>
 <li><a href="cerrar_sesion.php" >• Cerrar sesión</a></li>
 </ul>
 <hr>
